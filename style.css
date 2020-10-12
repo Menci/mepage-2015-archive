@@ -1,0 +1,502 @@
+@import url(http://fonts.googleapis.com/css?family=Exo+2);
+
+html {
+	overflow: hidden;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	width: 100%;
+	height: 100%;
+	font-family: 'Exo 2', 'Hiragino Sans GB', 'Microsoft Yahei', Tahoma, Helvetica, STHeiti, 微软雅黑, Arial;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	background: url(bkg.png) repeat;
+	overflow-x: hidden;
+}
+
+a {
+	text-decoration: none;
+	color: initial;
+}
+
+::selection {
+	background-color: rgba(255, 255, 255, 0.15);
+	color: auto;
+}
+
+.section {
+	width: 100%;
+	height: 100%;
+}
+
+.section:nth-child(1) {
+	background-color: rgba(87, 192, 255, 0.5);
+}
+
+.section:nth-child(2) {
+	background-color: rgba(247, 204, 160, 0.65);
+}
+
+.section:nth-child(3) {
+	background-color: rgba(245, 159, 159, 0.6);
+}
+
+.section:nth-child(4) {
+	background-color: rgba(201, 245, 172, 0.65);
+}
+
+#s1-left {
+	width: 33%;
+	text-align: right;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+#s1-left div.container {
+	width: 290px;
+	text-align: center;
+	display: inline-block;
+	margin-right: 60px;
+}
+
+#s1-left img {
+	width: 240px;
+	height: 240px;
+	border-radius: 50%;
+	box-shadow: 0px 0px 20px #888888;
+	transition: all linear 0.1s;
+}
+
+#s1-left img:hover {
+	box-shadow: 0px 0px 50px #888888;
+}
+
+#s1-left div.name {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	font-size: 60px;
+	text-shadow: 1px 1px 5px #333333;
+}
+
+#s1-left div.info {
+	font-size: 18px;
+}
+
+#s1-right {
+	width: 50%;
+	text-align: left;
+	margin-left: 30px;
+	vertical-align: middle;
+	display: inline-block;
+	background: rgba(255, 255, 255, 0.15);
+	padding: 15px;
+	box-shadow: 0 0 4px #aaa;
+	padding-bottom: 10px;
+}
+
+#s1-right div.title {
+	font-size: 30px;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	font-weight: bold;
+}
+
+#s1-right div.content {
+	font-size: 19px;
+}
+
+#s1-right div.tags ul {
+	padding: 0;
+	margin-top: 45px;
+	margin-bottom: 20px;
+}
+
+#s1-right div.tags ul li {
+	display: inline-block;
+	background-color: rgba(255, 255, 255, 0.25);
+	padding: 5px 16px 5px 16px;
+	margin-right: 15px;
+	font-size: 17px;
+	transition: all linear 0.1s;
+}
+
+#s1-right div.tags ul li:hover {
+	background-color: rgba(255, 255, 255, 0.6);
+	padding-left: 20px;
+	padding-right: 12px;
+}
+
+#s2-left {
+	width: 30%;
+	text-align: right;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#s2-left ul {
+	float: right;
+	width: 45%;
+}
+
+#s2-left ul li {
+	background-color: rgba(255, 255, 255, 0.3);
+	margin-top: 25px;
+	margin-bottom: 50px;
+	width: 100%;
+	display: block;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	transition: all linear 0.1s;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#s2-left ul li:hover {
+	box-shadow:0px 0px 10px #999;
+	padding-left: 10px;
+    border: 1px solid #999;
+}
+
+#s2-left ul li div.title {
+	font-size: 22px;
+	font-weight: bold;
+	margin-bottom: 7px;
+	text-shadow: 0px 0px 1px #333;
+}
+
+#s2-right {
+	width: 45%;
+	text-align: left;
+	vertical-align: middle;
+	display: inline-block;
+	margin-left: 100px;
+}
+
+#s2-right ul {
+	padding: 10px;
+}
+
+#s2-right ul li {
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#s2-right ul li strong {
+	text-shadow: 0px 0px 1px #333;
+}
+
+#s2-right ul li div.text {
+	transition: all linear 0.1s;
+}
+
+#s2-right ul li:hover div.text {
+	margin-left: 15px;
+}
+
+#s2-right ul li div.progress {
+	width: 100%;
+	border: 3px solid rgba(255, 255, 255, 0.4);
+	height: 30px;
+	margin-bottom: 10px;
+	transition: all linear 0.1s;
+}
+
+#s2-right ul li div.progress {
+	border: 3px solid rgba(255, 255, 255, 0.55);
+}
+
+#s2-right ul li div.progress div {
+	background-color: rgba(255, 255, 255, 0.4);
+	height: 100%;
+	transition: all linear 0.1s;
+}
+
+#s2-right ul li:hover div.progress div {
+	background-color: rgba(255, 255, 255, 0.55);
+}
+
+#s3 {
+	width: 90%;
+	text-align: center;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+#s3 ul {
+	max-width: 1300px;
+	width: 100%;
+	display: inline-block;
+	padding: 0;
+}
+
+#s3 ul li {
+	display: inline-block;
+	margin: 25px 45px 25px 45px;
+	transition: all linear 0.1s;
+	width: 275px;
+	height: 105px;
+	box-shadow: 0 0 5px rgba(153, 153, 153, 0.85);
+}
+
+#s3 ul li a {
+	display: inline-table;
+	width: 100%;
+	height: 100%;
+}
+
+#s3 ul li div.bkg {
+	transition: all linear 0.1s;
+	width: 100%;
+	height: 100px;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#s3 ul li:hover {
+	box-shadow: 0 0 15px rgba(153, 153, 153, 0.9);
+}
+
+#s3 ul li:hover div.bkg {
+	background-color: rgba(255, 255, 255, 0.25);
+}
+
+#s3 ul li div.title {
+	font-weight: bold;
+	font-size: 22px;
+	line-height: 22px;
+	margin-bottom: 10px;
+	text-shadow: 0px 0px 1px #333;
+}
+
+#s3 ul li div.info {
+	line-height: 20px;
+}
+
+#s4 {
+	text-align: center;
+	vertical-align: middle;
+	font-size: 90px;
+}
+
+@media ( max-width: 1020px ) {
+
+#sections {
+	height: 100%;
+}
+
+.section {
+	min-height: 100%;
+	height: auto;
+}
+
+#s1-left {
+	display: block;
+	min-width: 100%;
+	text-align: center;
+	height: auto;
+	margin: 0 0 30px 0;
+}
+
+#s1-left div.container {
+	margin: 35px 0 0 0;
+	position: relative;
+	width: auto;
+	height: auto;
+}
+
+#s1-left div.text, #s1-left img {
+	height: 140px;
+}
+
+#s1-left img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 140px;
+	height: 140px;
+}
+
+#s1-left div.text {
+	margin-left: 180px;
+	padding-top: 5px;
+}
+
+#s1-left div.text div.name {
+	font-size: 50px;
+}
+
+#s1-left div.text div.info {
+	font-size: 16px;
+}
+
+#s1-right {
+	display: block;
+	width: 90%;
+	height: 100%;
+	text-align: center;
+	margin: 30px 0 0 0;
+	box-shadow: none;
+	overflow: hidden;
+	padding: 5%;
+}
+
+#s1-right div.title {
+	font-size: 20px;
+	margin-top: 10px;
+	margin-bottom: 30px;
+	width: 100%;
+}
+
+#s1-right div.content {
+	font-size: 14px;
+	width: 100%;
+}
+
+#s1-right div.tags {
+	margin-top: -15px;
+}
+
+#s1-right div.tags ul li {
+	margin-bottom: 10px;
+}
+
+#s1-right div.tags ul li {
+	padding: 5px 12px 5px 12px;
+	margin-right: 3px;
+	margin-left: 3px;
+	font-size: 10px;
+	margin-bottom: 10px;
+}
+
+#s2-left {
+	display: block;
+	width: 100%;
+	height: 190px;
+}
+
+#s2-left ul {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+
+#s2-left ul li {
+	margin: 0;
+	width: 50%;
+	display: block;
+}
+
+#s2-left ul li:nth-child(odd) {
+	float: left;
+	margin-left: -2px;
+}
+
+#s2-left ul li:nth-child(even) {
+	float: right;
+	margin-right: -2px;
+}
+
+#s2-left ul li:hover {
+	padding-left: 0px;
+}
+
+#s2-left ul li div.title {
+	font-size: 17px;
+}
+
+#s2-left ul li div.info {
+	font-size: 14.5px;
+}
+
+#s2-right {
+	display: block;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	padding-bottom: 10px;
+	margin-top: -20px;
+}
+
+#s2-right ul {
+	margin-top: 0;
+	margin-bottom: -20px;
+}
+
+#s2-right ul li {
+	margin-top: 0;
+	margin-bottom: 25px;
+}
+
+.section:nth-child(3) {
+	min-height: initial;
+}
+
+#s3 {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+#s3 ul {
+	padding: 0;
+	margin: 0;
+	margin-bottom: -3px;
+}
+
+#s3 ul li {
+	margin: 0;
+	padding: 0;
+	width: 50%;
+	display: block;
+	height: 95px;
+	box-shadow: 0 0 4px rgba(153, 153, 153, 0.85);
+}
+
+#s3 ul li:hover {
+	box-shadow: 0 0 8px rgba(153, 153, 153, 0.85);
+}
+
+#s3 ul li div.bkg {
+	width: auto;
+}
+
+#s3 ul li div.title {
+	font-size: 19px;
+}
+
+#s3 ul li div.info {
+	font-size: 14px;
+}
+
+#s3 ul li:nth-child(odd) {
+	float: left;
+}
+
+#s3 ul li:nth-child(even) {
+	float: right;
+}
+
+.section:nth-child(4) {
+	display: table;
+}
+
+#s4 {
+	text-align: center;
+	vertical-align: middle;
+	font-size: 40px;
+	display: table-cell;
+}
+
+@media ( max-width: 500px ) {
+
+#s1-left div.text {
+	margin-left: 155px;
+	padding-top: 5px;
+}
+
+}
